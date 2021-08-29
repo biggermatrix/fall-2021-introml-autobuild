@@ -9,7 +9,7 @@ parts:
   - file: content/in_class
   - file: content/capstone
 - caption: SESSIONS
-  numbered: true
+  numbered: True
   start_numbering_at: 1
   chapters:
   - file: sessions/session1
@@ -42,7 +42,7 @@ parts:
   - file: sessions/session28
   - file: sessions/session29
 - caption: NOTEBOOKS
-  numbered: true
+  numbered: True
   start_numbering_at: 1
   chapters:
   - file: notebooks/01-intro-python/01-python-overview
