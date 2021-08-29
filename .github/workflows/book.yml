@@ -23,11 +23,18 @@ jobs:
       run: |
         pip install -r requirements.txt
 
+    - name: Convert Script
+      run: |
+        jupyter nbconvert --to script ./scripts/convert.ipynb
+
+    - name: Build Content
+      run: |
+        cd scripts && python convert.py
 
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build --all site/ 
+        cd .. && jupyter-book build --all site/
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
