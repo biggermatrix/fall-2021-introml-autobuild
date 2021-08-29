@@ -100,11 +100,11 @@ def add_row_md(md_file, title, df):
     return md_file
 
 
-def generate_sessions(config, toc, schedule, path, content, keys):
+def generate_sessions(config, toc, toc_part, schedule, path, content, keys):
     #toc[toc_part]['chapters']=[] #zero out the sessions
     for index, row in schedule.iterrows():
         if row['Publish']=='1':
-            #toc[toc_part]['chapters'].append({'file': 'sessions/session'+row['Session']})
+            toc[toc_part]['chapters'].append({'file': 'sessions/session'+row['Session']})
             md_file=create_md_title(row['Topic']+' ('+row['Date'] +')', row['Summary'])
             for key in keys:
                 content[key]=content[key].astype(str)
