@@ -13,3 +13,4 @@ importlib-resources
 sphinx-book-theme
 nbconvert
 gdown
+ruamel.yaml
