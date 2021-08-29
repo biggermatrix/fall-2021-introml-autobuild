@@ -14,3 +14,4 @@ sphinx-book-theme
 nbconvert
 gdown
 ruamel.yaml
+openpyxl
