@@ -10,6 +10,7 @@ parts:
   - file: content/capstone
 - caption: SESSIONS
   numbered: true
+  start_numbering_at: 1
   chapters:
   - file: sessions/session1
   - file: sessions/session2
@@ -42,6 +43,7 @@ parts:
   - file: sessions/session29
 - caption: NOTEBOOKS
   numbered: true
+  start_numbering_at: 1
   chapters:
   - file: notebooks/01-intro-python/01-python-overview
   - file: notebooks/01-intro-python/02-datastructures
