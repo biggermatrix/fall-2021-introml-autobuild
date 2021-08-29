@@ -34,7 +34,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        cd .. && jupyter-book build --all site/
+        jupyter-book build --all site/
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
