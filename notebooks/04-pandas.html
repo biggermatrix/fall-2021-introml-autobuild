@@ -5,54 +5,52 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>4. Introduction to Pandas &#8212; MGMT 4190/6560 Introduction to Machine Learning Applications @Rensselaer</title>
+    <title>Introduction to Pandas &#8212; MGMT 4190/6560 Introduction to Machine Learning Applications @Rensselaer</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="5. Conditional Statements and Loops" href="../02-intro-python/01-conditionals-loops.html" />
-    <link rel="prev" title="3. Overview of Numpy" href="03-numpy.html" />
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -69,22 +67,22 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+    <a class="navbar-brand text-wrap" href="../index.html">
       
-      <img src="../../_static/logo.png" class="logo" alt="logo">
+      <img src="../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">MGMT 4190/6560 Introduction to Machine Learning Applications @Rensselaer</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../intro.html">
+  <a class="reference internal" href="../intro.html">
    Welcome to Introduction to Machine Learning Applications
   </a>
  </li>
@@ -96,27 +94,27 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../content/schedule.html">
+  <a class="reference internal" href="../content/schedule.html">
    Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../content/syllabus.html">
+  <a class="reference internal" href="../content/syllabus.html">
    Syllabus
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../content/preparation.html">
+  <a class="reference internal" href="../content/preparation.html">
    Before Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../content/in_class.html">
+  <a class="reference internal" href="../content/in_class.html">
    In Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../content/capstone.html">
+  <a class="reference internal" href="../content/capstone.html">
    <strong>
     The MS Business Analytics Capstone Course
    </strong>
@@ -130,147 +128,147 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session1.html">
+  <a class="reference internal" href="../sessions/session1.html">
    1. Course Overview &amp; Introduction to the Data Science Lifecycle (08/31)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session2.html">
+  <a class="reference internal" href="../sessions/session2.html">
    2. Python Basics (09/03)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session3.html">
+  <a class="reference internal" href="../sessions/session3.html">
    3. Python Basics  (First in Person Class, Tuesday follow Monday Schedule) (09/08)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session4.html">
+  <a class="reference internal" href="../sessions/session4.html">
    4. Python conditionals, loops, functions, aggregating.  (09/10)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session5.html">
+  <a class="reference internal" href="../sessions/session5.html">
    5. Python conditionals, loops, functions, aggregating (continued)  (09/14)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session6.html">
+  <a class="reference internal" href="../sessions/session6.html">
    6. Python visualization, data manipulation , and feature creation. (09/17)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session7.html">
+  <a class="reference internal" href="../sessions/session7.html">
    7. Python visualization, data manipulation , and feature creation (continued) (09/21)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session8.html">
+  <a class="reference internal" href="../sessions/session8.html">
    8. Overview of Modeling (09/24)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session9.html">
-   9. Overview of Classification (09/28)
+  <a class="reference internal" href="../sessions/session9.html">
+   9. Overview of Modeling (09/28)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session10.html">
+  <a class="reference internal" href="../sessions/session10.html">
    10. Overview of Classification (10/01)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session11.html">
+  <a class="reference internal" href="../sessions/session11.html">
    11. Python and Regression (10/05)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session12.html">
+  <a class="reference internal" href="../sessions/session12.html">
    12. Python and Regression (10/08)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session13.html">
+  <a class="reference internal" href="../sessions/session13.html">
    13. Unsupervised Models (10/15)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session14.html">
+  <a class="reference internal" href="../sessions/session14.html">
    14. Midterm Exam (10/19)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session15.html">
+  <a class="reference internal" href="../sessions/session15.html">
    15. Time Series Analysis  (10/22)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session16.html">
+  <a class="reference internal" href="../sessions/session16.html">
    16. Time Series Analysis (10/26)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session17.html">
+  <a class="reference internal" href="../sessions/session17.html">
    17. Text and NLP (10/29)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session18.html">
+  <a class="reference internal" href="../sessions/session18.html">
    18. Text and NLP (11/02)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session19.html">
+  <a class="reference internal" href="../sessions/session19.html">
    19. Introduction to Deep Learning (11/05)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session20.html">
+  <a class="reference internal" href="../sessions/session20.html">
    20. Introduction to Deep Learning (11/09)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session21.html">
+  <a class="reference internal" href="../sessions/session21.html">
    21. Introduction to Deep Learning (11/12)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session22.html">
+  <a class="reference internal" href="../sessions/session22.html">
    22. Image Data and Deep Learning (11/16)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session23.html">
+  <a class="reference internal" href="../sessions/session23.html">
    23. NLP and Deep Learning (11/19)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session24.html">
+  <a class="reference internal" href="../sessions/session24.html">
    24. R and Machine Learning (11/23)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session25.html">
+  <a class="reference internal" href="../sessions/session25.html">
    25. Big Data (11/30)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session26.html">
+  <a class="reference internal" href="../sessions/session26.html">
    26. Open project questions.  (12/03)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session27.html">
+  <a class="reference internal" href="../sessions/session27.html">
    27. Final Presentations (12/07)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session28.html">
+  <a class="reference internal" href="../sessions/session28.html">
    28. Final Presentations  (12/10)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../sessions/session29.html">
+  <a class="reference internal" href="../sessions/session29.html">
    29. Final Exam (12/15)
   </a>
  </li>
@@ -280,240 +278,220 @@
   NOTEBOOKS
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="01-python-overview.html">
-   1. Overview of Python Features
+  <a class="reference internal" href="02-intro-python/01-conditionals-loops.html">
+   1. Conditional Statements and Loops
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="02-datastructures.html">
-   2. Introduction Datastructures (Varibles, Lists, Dictionaries, and Sets)
+  <a class="reference internal" href="02-intro-python/02-functions.html">
+   2. Functions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="03-numpy.html">
-   3. Overview of Numpy
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   4. Introduction to Pandas
+  <a class="reference internal" href="02-intro-python/03-null-values.html">
+   3. Null Values
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02-intro-python/01-conditionals-loops.html">
-   5. Conditional Statements and Loops
+  <a class="reference internal" href="02-intro-python/04-groupby.html">
+   4. Groupby and Pivot Tables
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02-intro-python/02-functions.html">
-   6. Functions
+  <a class="reference internal" href="02-intro-python/04-pivottable.html">
+   5. More Pivottables
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02-intro-python/03-null-values.html">
-   7. Null Values
+  <a class="reference internal" href="02-intro-python/05-kaggle-baseline.html">
+   6. Kaggle Baseline
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02-intro-python/04-groupby.html">
-   8. Groupby and Pivot Tables
+  <a class="reference internal" href="03-viz-api-scraper/01-intro-api-twitter.html">
+   7. Introduction to APIs
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02-intro-python/04-pivottable.html">
-   9. More Pivottables
+  <a class="reference internal" href="03-viz-api-scraper/02-intro-python-webmining.html">
+   8. Web Mining
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../02-intro-python/05-kaggle-baseline.html">
-   10. Kaggle Baseline
+  <a class="reference internal" href="03-viz-api-scraper/03-visualization-python-seaborn.html">
+   9. Introduction to Seaborn
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03-viz-api-scraper/01-intro-api-twitter.html">
-   11. Introduction to APIs
+  <a class="reference internal" href="03-viz-api-scraper/04-strings-regular-expressions.html">
+   10. String Manipulation and Regular Expressions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03-viz-api-scraper/02-intro-python-webmining.html">
-   12. Web Mining
+  <a class="reference internal" href="03-viz-api-scraper/05-features-dummies.html">
+   11. Feature Extraction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03-viz-api-scraper/03-visualization-python-seaborn.html">
-   13. Introduction to Seaborn
+  <a class="reference internal" href="03-viz-api-scraper/06-matplotlib.html">
+   13. MatplotLab
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03-viz-api-scraper/04-strings-regular-expressions.html">
-   14. String Manipulation and Regular Expressions
+  <a class="reference internal" href="04-intro-modeling/01-neural-networks.html">
+   14. Neural Networks and the Simplist XOR Problem
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03-viz-api-scraper/05-features-dummies.html">
-   15. Feature Extraction
+  <a class="reference internal" href="04-intro-modeling/02-train-test-split.html">
+   15. Train Test Splits
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../03-viz-api-scraper/06-matplotlib.html">
-   17. MatplotLab
+  <a class="reference internal" href="04-intro-modeling/03-intro-logistic-knn.html">
+   16. Classification with Scikit-learn
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../04-intro-modeling/01-neural-networks.html">
-   18. Neural Networks and the Simplist XOR Problem
+  <a class="reference internal" href="04-intro-modeling/04-knn.html">
+   17. KNN
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../04-intro-modeling/02-train-test-split.html">
-   19. Train Test Splits
+  <a class="reference internal" href="05-regression/01-matrix-regression-gradient-decent-python.html">
+   18. Linear Regression
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../04-intro-modeling/03-intro-logistic-knn.html">
-   20. Classification with Scikit-learn
+  <a class="reference internal" href="05-regression/02-regression-boston-housing-python.html">
+   19. Boston Housing
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../04-intro-modeling/04-knn.html">
-   21. KNN
+  <a class="reference internal" href="05-regression/03-ridge-lasso-python.html">
+   20. Lasso Ridge Regression
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../05-regression/01-matrix-regression-gradient-decent-python.html">
-   22. Linear Regression
+  <a class="reference internal" href="05-regression/04-stats-models.html">
+   21. Regression with Stats-Models
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../05-regression/02-regression-boston-housing-python.html">
-   23. Boston Housing
+  <a class="reference internal" href="06-unsupervised/01-introduction-pca.html">
+   22. Introduction to Principal Component Analysis
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../05-regression/03-ridge-lasso-python.html">
-   24. Lasso Ridge Regression
+  <a class="reference internal" href="06-unsupervised/02-pca2.html">
+   23. In Depth: Principal Component Analysis
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../05-regression/04-stats-models.html">
-   25. Regression with Stats-Models
+  <a class="reference internal" href="06-unsupervised/03-kmeans.html">
+   24. k-Means Clustering
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../06-unsupervised/01-introduction-pca.html">
-   26. Introduction to Principal Component Analysis
+  <a class="reference internal" href="06-unsupervised/04-covid19.html">
+   25. Coronavirus Data Modeling
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../06-unsupervised/02-pca2.html">
-   27. In Depth: Principal Component Analysis
+  <a class="reference internal" href="07-intro-timeseries/01-time-series.html">
+   26. Time Series Data
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../06-unsupervised/03-kmeans.html">
-   28. k-Means Clustering
+  <a class="reference internal" href="07-intro-timeseries/02-forcasting-rossman.html">
+   27. Panel Data vs Time Series Analysis
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../06-unsupervised/04-covid19.html">
-   29. Coronavirus Data Modeling
+  <a class="reference internal" href="08-intro-nlp/01-titanic-features.html">
+   29. Basic Text Feature Creation in Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../07-intro-timeseries/01-time-series.html">
-   30. Time Series Data
+  <a class="reference internal" href="08-intro-nlp/02-corpus-simple.html">
+   30. Introduction to Text Mining in Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../07-intro-timeseries/02-forcasting-rossman.html">
-   31. Panel Data vs Time Series Analysis
+  <a class="reference internal" href="08-intro-nlp/03-scikit-learn-text.html">
+   31. Bag-of-Words Using Scikit Learn
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../08-intro-nlp/01-titanic-features.html">
-   33. Basic Text Feature Creation in Python
+  <a class="reference internal" href="08-intro-nlp/04-what-cooking-python.html">
+   32. What’s Cooking in Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../08-intro-nlp/02-corpus-simple.html">
-   34. Introduction to Text Mining in Python
+  <a class="reference internal" href="08-intro-nlp/05-bag-popcorn-bag-words.html">
+   33. Bag of Words
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../08-intro-nlp/03-scikit-learn-text.html">
-   35. Bag-of-Words Using Scikit Learn
+  <a class="reference internal" href="08-intro-nlp/07-fastai-imdb.html">
+   34. IMDB
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../08-intro-nlp/04-what-cooking-python.html">
-   36. What’s Cooking in Python
+  <a class="reference internal" href="09-deep-learning1/00-neural-networks.html">
+   35. Neural Networks
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../08-intro-nlp/05-bag-popcorn-bag-words.html">
-   37. Bag of Words
+  <a class="reference internal" href="09-deep-learning1/00-evaluation.html">
+   36. Evaluation of Classifiers
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../08-intro-nlp/07-fastai-imdb.html">
-   38. IMDB
+  <a class="reference internal" href="09-deep-learning1/01-tensorflow.html">
+   37. Tensorflow Introduction
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/00-neural-networks.html">
-   39. Neural Networks
+  <a class="reference internal" href="09-deep-learning1/03-pytorch-iris.html">
+   40. Revisiting IRIS with PyTorch
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/00-evaluation.html">
-   40. Evaluation of Classifiers
+  <a class="reference internal" href="09-deep-learning1/04-pytorch-explainer.html">
+   41. PyTorch Deep Explainer MNIST example
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/01-tensorflow.html">
-   41. Tensorflow Introduction
+  <a class="reference internal" href="09-deep-learning1/05-pytorch-mnist.html">
+   42. PyTorch Deep Explainer MNIST example
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/03-pytorch-iris.html">
-   44. Revisiting IRIS with PyTorch
+  <a class="reference internal" href="09-deep-learning1/06-regression-bh-pytorch.html">
+   43. Revisting Boston Housing with Pytorch
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/04-pytorch-explainer.html">
-   45. PyTorch Deep Explainer MNIST example
+  <a class="reference internal" href="09-deep-learning1/07-titanic-fastai.html">
+   44. Titanic Fastai
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/05-pytorch-mnist.html">
-   46. PyTorch Deep Explainer MNIST example
+  <a class="reference internal" href="09-deep-learning1/08-ludwig.html">
+   45. Ludwig
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/06-regression-bh-pytorch.html">
-   47. Revisting Boston Housing with Pytorch
+  <a class="reference internal" href="10-big-data/01-intro-mapreduce.html">
+   46. Introduction to Map Reduce
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/07-titanic-fastai.html">
-   48. Titanic Fastai
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../09-deep-learning1/08-ludwig.html">
-   49. Ludwig
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../10-big-data/01-intro-mapreduce.html">
-   50. Introduction to Map Reduce
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../10-big-data/02-intro-spark.html">
-   51. Introduction to Spark
+  <a class="reference internal" href="10-big-data/02-intro-spark.html">
+   47. Introduction to Spark
   </a>
  </li>
 </ul>
@@ -589,7 +567,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/notebooks/01-intro-python/04-pandas.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notebooks/04-pandas.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -609,7 +587,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/rpi-techfundamentals/spring2021_website/issues/new?title=Issue%20on%20page%20%2Fnotebooks/01-intro-python/04-pandas.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rpi-techfundamentals/spring2021_website/issues/new?title=Issue%20on%20page%20%2Fnotebooks/04-pandas.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -630,17 +608,17 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/rpi-techfundamentals/spring2021_website/master?urlpath=tree/site/notebooks/01-intro-python/04-pandas.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/rpi-techfundamentals/spring2021_website/master?urlpath=tree/site/notebooks/04-pandas.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
-                    src="../../_static/images/logo_binder.svg"
+                    src="../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/rpi-techfundamentals/spring2021_website/blob/master/site/notebooks/01-intro-python/04-pandas.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/rpi-techfundamentals/spring2021_website/blob/master/site/notebooks/04-pandas.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../../_static/images/logo_colab.png"
+                    src="../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
         
         
@@ -659,27 +637,27 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pandas-overview">
-   4.1. Pandas Overview
+   Pandas Overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pandas-like-the-rest-of-python-is-object-oriented">
-   4.2. Pandas (like the rest of Python) is object-oriented
+   Pandas (like the rest of Python) is object-oriented
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#pandas-series">
-   4.3. Pandas Series
+   Pandas Series
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#plotting-a-series">
-   4.4. Plotting a Series
+   Plotting a Series
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#creating-a-series-from-a-dict">
-   4.5. Creating a Series from a
+   Creating a Series from a
    <code class="docutils literal notranslate">
     <span class="pre">
      dict
@@ -689,7 +667,7 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#indexing-slicing-a-series-with-or-notation">
-   4.6. Indexing/Slicing a Series with
+   Indexing/Slicing a Series with
    <code class="docutils literal notranslate">
     <span class="pre">
      []
@@ -700,122 +678,122 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#functions-on-series">
-   4.7. Functions on Series
+   Functions on Series
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#time-series">
-   4.8. Time Series
+   Time Series
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#plot-time-series">
-   4.9. Plot Time Series
+   Plot Time Series
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dataframes">
-   4.10. DataFrames
+   DataFrames
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#creating-a-dataframe-from-outside-data">
-   4.11. Creating a DataFrame from Outside Data
+   Creating a DataFrame from Outside Data
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#creating-a-dataframe-from-python-data-structures">
-   4.12. Creating a DataFrame from Python Data Structures
+   Creating a DataFrame from Python Data Structures
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#example-creating-a-dataframe-from-multiple-series">
-   4.13. Example: Creating a DataFrame from Multiple Series
+   Example: Creating a DataFrame from Multiple Series
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#plotting-dataframes">
-   4.14. Plotting DataFrames
+   Plotting DataFrames
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#functions-and-dataframes">
-   4.15. Functions and DataFrames
+   Functions and DataFrames
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#summary-statistics">
-   4.16. Summary statistics
+   Summary statistics
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-types">
-   4.17. Data Types
+   Data Types
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#accessing-the-row-and-column-labels">
-   4.18. Accessing the Row and Column Labels
+   Accessing the Row and Column Labels
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#loading-files-with-pandas">
-   4.19. Loading Files with Pandas
+   Loading Files with Pandas
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#large-dataframes-head-and-tail">
-   4.20. Large Dataframes - Head and Tail
+   Large Dataframes - Head and Tail
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#indexing-slicing-rows-of-dataframes">
-   4.21. Indexing/Slicing Rows of DataFrames
+   Indexing/Slicing Rows of DataFrames
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#indexing-slicing-columns-of-dataframes">
-   4.22. Indexing/Slicing Columns of DataFrames
+   Indexing/Slicing Columns of DataFrames
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dropping-columns-from-dataframes">
-   4.23. Dropping Columns from Dataframes
+   Dropping Columns from Dataframes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#selecting-rows">
-   4.24. Selecting Rows
+   Selecting Rows
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#intro-to-filters-logical-indexing">
-   4.25. Intro to Filters (Logical indexing)
+   Intro to Filters (Logical indexing)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#joining-dataframes">
-   4.26. Joining Dataframes
+   Joining Dataframes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#stacking-dataframes-vertically">
-   4.27. Stacking Dataframes Vertically
+   Stacking Dataframes Vertically
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#inner-outer-joins-dataframes">
-   4.28. Inner/Outer Joins Dataframes
+   Inner/Outer Joins Dataframes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#credits">
-   4.29. CREDITS
+   CREDITS
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#large-sections-of-this-were-adopted-from-analysing-structured-data-with-pandas-by-steve-phelps-thanks-steve">
-     4.29.1. Large sections of this were adopted from Analysing structured data with Pandas by Steve Phelps.  Thanks Steve!
+     Large sections of this were adopted from Analysing structured data with Pandas by Steve Phelps.  Thanks Steve!
     </a>
    </li>
   </ul>
@@ -835,7 +813,7 @@
 <center><h1>Introduction to Python - Introduction to Pandas</h1></center>
 <center><h3><a href = 'http://rpi.analyticsdojo.com'>rpi.analyticsdojo.com</a></h3></center>
 <div class="section" id="introduction-to-pandas">
-<h1><span class="section-number">4. </span>Introduction to Pandas<a class="headerlink" href="#introduction-to-pandas" title="Permalink to this headline">¶</a></h1>
+<h1>Introduction to Pandas<a class="headerlink" href="#introduction-to-pandas" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>Pandas Overview</p></li>
 <li><p>Series Objects</p></li>
@@ -845,7 +823,7 @@
 <li><p>Examples: Iris</p></li>
 </ul>
 <div class="section" id="pandas-overview">
-<h2><span class="section-number">4.1. </span>Pandas Overview<a class="headerlink" href="#pandas-overview" title="Permalink to this headline">¶</a></h2>
+<h2>Pandas Overview<a class="headerlink" href="#pandas-overview" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Pandas is object-oriented.</p></li>
 <li><p>We create data frames by constructing instances of different classes.</p></li>
@@ -867,7 +845,7 @@
 </div>
 </div>
 <div class="section" id="pandas-like-the-rest-of-python-is-object-oriented">
-<h2><span class="section-number">4.2. </span>Pandas (like the rest of Python) is object-oriented<a class="headerlink" href="#pandas-like-the-rest-of-python-is-object-oriented" title="Permalink to this headline">¶</a></h2>
+<h2>Pandas (like the rest of Python) is object-oriented<a class="headerlink" href="#pandas-like-the-rest-of-python-is-object-oriented" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Pandas is object-oriented.</p></li>
 <li><p>We create data frames by constructing instances of different classes.</p></li>
@@ -881,7 +859,7 @@
 </ul>
 </div>
 <div class="section" id="pandas-series">
-<h2><span class="section-number">4.3. </span>Pandas Series<a class="headerlink" href="#pandas-series" title="Permalink to this headline">¶</a></h2>
+<h2>Pandas Series<a class="headerlink" href="#pandas-series" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>One-dimensional array</p></li>
 <li><p>Series can be like array, with standard integer index starting at 0</p></li>
@@ -906,7 +884,7 @@
 </div>
 </div>
 <div class="section" id="plotting-a-series">
-<h2><span class="section-number">4.4. </span>Plotting a Series<a class="headerlink" href="#plotting-a-series" title="Permalink to this headline">¶</a></h2>
+<h2>Plotting a Series<a class="headerlink" href="#plotting-a-series" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can plot a series by invoking the <code class="docutils literal notranslate"><span class="pre">plot()</span></code> method on an instance of a <code class="docutils literal notranslate"><span class="pre">Series</span></code> object.</p></li>
 <li><p>The x-axis will autimatically be labelled with the series index.</p></li>
@@ -922,7 +900,7 @@
 </div>
 </div>
 <div class="section" id="creating-a-series-from-a-dict">
-<h2><span class="section-number">4.5. </span>Creating a Series from a <code class="docutils literal notranslate"><span class="pre">dict</span></code><a class="headerlink" href="#creating-a-series-from-a-dict" title="Permalink to this headline">¶</a></h2>
+<h2>Creating a Series from a <code class="docutils literal notranslate"><span class="pre">dict</span></code><a class="headerlink" href="#creating-a-series-from-a-dict" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="mf">0.</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="mf">1.</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span> <span class="p">:</span> <span class="mf">2.</span><span class="p">}</span>
@@ -934,7 +912,7 @@
 </div>
 </div>
 <div class="section" id="indexing-slicing-a-series-with-or-notation">
-<h2><span class="section-number">4.6. </span>Indexing/Slicing a Series with <code class="docutils literal notranslate"><span class="pre">[]</span></code> or . notation<a class="headerlink" href="#indexing-slicing-a-series-with-or-notation" title="Permalink to this headline">¶</a></h2>
+<h2>Indexing/Slicing a Series with <code class="docutils literal notranslate"><span class="pre">[]</span></code> or . notation<a class="headerlink" href="#indexing-slicing-a-series-with-or-notation" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Series can be accessed using the same syntax as arrays and dicts.</p></li>
 <li><p>We use the labels in the index to access each element.</p></li>
@@ -951,7 +929,7 @@
 </div>
 </div>
 <div class="section" id="functions-on-series">
-<h2><span class="section-number">4.7. </span>Functions on Series<a class="headerlink" href="#functions-on-series" title="Permalink to this headline">¶</a></h2>
+<h2>Functions on Series<a class="headerlink" href="#functions-on-series" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can perform calculations using the entire series similar to numpy.</p></li>
 <li><p>Methods are called from within <code class="docutils literal notranslate"><span class="pre">np.Series</span></code>, for example np.Series.add</p></li>
@@ -996,7 +974,7 @@
 </div>
 </div>
 <div class="section" id="time-series">
-<h2><span class="section-number">4.8. </span>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">¶</a></h2>
+<h2>Time Series<a class="headerlink" href="#time-series" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Time series models link specific times with rows.</p></li>
 </ul>
@@ -1018,7 +996,7 @@
 </div>
 </div>
 <div class="section" id="plot-time-series">
-<h2><span class="section-number">4.9. </span>Plot Time Series<a class="headerlink" href="#plot-time-series" title="Permalink to this headline">¶</a></h2>
+<h2>Plot Time Series<a class="headerlink" href="#plot-time-series" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>With a data and a value, the plot command can be used to provide quick visibility in the form of a line graph.</p></li>
 </ul>
@@ -1045,7 +1023,7 @@
 </div>
 </div>
 <div class="section" id="dataframes">
-<h2><span class="section-number">4.10. </span>DataFrames<a class="headerlink" href="#dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>DataFrames<a class="headerlink" href="#dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The <code class="docutils literal notranslate"><span class="pre">pandas</span></code> module provides a powerful data-structure called a data frame.</p></li>
 <li><p>It is similar, but not identical to:</p>
@@ -1060,7 +1038,7 @@
 </ul>
 </div>
 <div class="section" id="creating-a-dataframe-from-outside-data">
-<h2><span class="section-number">4.11. </span>Creating a DataFrame from Outside Data<a class="headerlink" href="#creating-a-dataframe-from-outside-data" title="Permalink to this headline">¶</a></h2>
+<h2>Creating a DataFrame from Outside Data<a class="headerlink" href="#creating-a-dataframe-from-outside-data" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Data frames can be read and written to/from:</p>
 <ul>
@@ -1079,7 +1057,7 @@
 </ul>
 </div>
 <div class="section" id="creating-a-dataframe-from-python-data-structures">
-<h2><span class="section-number">4.12. </span>Creating a DataFrame from Python Data Structures<a class="headerlink" href="#creating-a-dataframe-from-python-data-structures" title="Permalink to this headline">¶</a></h2>
+<h2>Creating a DataFrame from Python Data Structures<a class="headerlink" href="#creating-a-dataframe-from-python-data-structures" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Data frames can be constructed from other data structures in memory:</p>
 <ul>
@@ -1095,7 +1073,7 @@
 </ul>
 </div>
 <div class="section" id="example-creating-a-dataframe-from-multiple-series">
-<h2><span class="section-number">4.13. </span>Example: Creating a DataFrame from Multiple Series<a class="headerlink" href="#example-creating-a-dataframe-from-multiple-series" title="Permalink to this headline">¶</a></h2>
+<h2>Example: Creating a DataFrame from Multiple Series<a class="headerlink" href="#example-creating-a-dataframe-from-multiple-series" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Pandas codes missing values as <code class="docutils literal notranslate"><span class="pre">NaN</span></code> rather than <code class="docutils literal notranslate"><span class="pre">None</span></code></p></li>
 <li><p>Series should have matching keys for each matching row.</p></li>
@@ -1126,7 +1104,7 @@
 </div>
 </div>
 <div class="section" id="plotting-dataframes">
-<h2><span class="section-number">4.14. </span>Plotting DataFrames<a class="headerlink" href="#plotting-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Plotting DataFrames<a class="headerlink" href="#plotting-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>When plotting a data frame, each column is plotted as its own series on the same graph.</p></li>
 <li><p>The column names are used to label each series.</p></li>
@@ -1148,7 +1126,7 @@
 </div>
 </div>
 <div class="section" id="functions-and-dataframes">
-<h2><span class="section-number">4.15. </span>Functions and DataFrames<a class="headerlink" href="#functions-and-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Functions and DataFrames<a class="headerlink" href="#functions-and-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can do calculations and functions with dataframes just like series.</p></li>
 <li><p>Functions will typically return a dataframe or a series, depending.</p></li>
@@ -1188,7 +1166,7 @@
 </div>
 </div>
 <div class="section" id="summary-statistics">
-<h2><span class="section-number">4.16. </span>Summary statistics<a class="headerlink" href="#summary-statistics" title="Permalink to this headline">¶</a></h2>
+<h2>Summary statistics<a class="headerlink" href="#summary-statistics" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>To quickly obtain summary statistics on numerical values use the <code class="docutils literal notranslate"><span class="pre">describe</span></code> method.</p></li>
 <li><p>You will get a warning if there are missing values.</p></li>
@@ -1216,7 +1194,7 @@
 </div>
 </div>
 <div class="section" id="data-types">
-<h2><span class="section-number">4.17. </span>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<h2>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Each will have an inferred data type.</p></li>
 </ul>
@@ -1229,7 +1207,7 @@
 </div>
 </div>
 <div class="section" id="accessing-the-row-and-column-labels">
-<h2><span class="section-number">4.18. </span>Accessing the Row and Column Labels<a class="headerlink" href="#accessing-the-row-and-column-labels" title="Permalink to this headline">¶</a></h2>
+<h2>Accessing the Row and Column Labels<a class="headerlink" href="#accessing-the-row-and-column-labels" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>The row labels (index) can be accessed through <code class="docutils literal notranslate"><span class="pre">df.index</span></code>.</p></li>
 <li><p>The column labels can be accessed through <code class="docutils literal notranslate"><span class="pre">df.columns</span></code>.</p></li>
@@ -1257,7 +1235,7 @@
 </div>
 </div>
 <div class="section" id="loading-files-with-pandas">
-<h2><span class="section-number">4.19. </span>Loading Files with Pandas<a class="headerlink" href="#loading-files-with-pandas" title="Permalink to this headline">¶</a></h2>
+<h2>Loading Files with Pandas<a class="headerlink" href="#loading-files-with-pandas" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We used Pandas in an earlier notebook to load the iris data file.</p></li>
 <li><p>Whenver you have a dataset with a variety of fields of various types, loading it into Pandas is a good strategy.</p></li>
@@ -1295,7 +1273,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="large-dataframes-head-and-tail">
-<h2><span class="section-number">4.20. </span>Large Dataframes - Head and Tail<a class="headerlink" href="#large-dataframes-head-and-tail" title="Permalink to this headline">¶</a></h2>
+<h2>Large Dataframes - Head and Tail<a class="headerlink" href="#large-dataframes-head-and-tail" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Many times you just want a sampling of the available data</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">head()</span></code> command can view the start of a data frame.</p></li>
@@ -1326,7 +1304,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="indexing-slicing-rows-of-dataframes">
-<h2><span class="section-number">4.21. </span>Indexing/Slicing Rows of DataFrames<a class="headerlink" href="#indexing-slicing-rows-of-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Indexing/Slicing Rows of DataFrames<a class="headerlink" href="#indexing-slicing-rows-of-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Simple ways of selecting all rows and colu (<code class="docutils literal notranslate"><span class="pre">df[:]</span></code>)</p></li>
 <li><p>Rows can be accessed via a key or a integer corresponding to the row number.</p></li>
@@ -1354,7 +1332,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="indexing-slicing-columns-of-dataframes">
-<h2><span class="section-number">4.22. </span>Indexing/Slicing Columns of DataFrames<a class="headerlink" href="#indexing-slicing-columns-of-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Indexing/Slicing Columns of DataFrames<a class="headerlink" href="#indexing-slicing-columns-of-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Simple ways of selecting colum(s) <code class="docutils literal notranslate"><span class="pre">frame[[colname(s)]]</span></code>.</p></li>
 <li><p>Columns can have one (<code class="docutils literal notranslate"><span class="pre">df['x']</span></code>) or multiple (<code class="docutils literal notranslate"><span class="pre">df[['x',</span> <span class="pre">'y']]</span></code>) columns.</p></li>
@@ -1380,7 +1358,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="dropping-columns-from-dataframes">
-<h2><span class="section-number">4.23. </span>Dropping Columns from Dataframes<a class="headerlink" href="#dropping-columns-from-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Dropping Columns from Dataframes<a class="headerlink" href="#dropping-columns-from-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Done using the <code class="docutils literal notranslate"><span class="pre">drop</span></code> syntax.</p></li>
 <li><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.drop.html">Drop Documentation</a></p></li>
@@ -1398,7 +1376,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="selecting-rows">
-<h2><span class="section-number">4.24. </span>Selecting Rows<a class="headerlink" href="#selecting-rows" title="Permalink to this headline">¶</a></h2>
+<h2>Selecting Rows<a class="headerlink" href="#selecting-rows" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Similarly, we also might want to select out rows, and we can utilize the same syntax.</p></li>
 <li><p><a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.iloc.html">iloc</a></p></li>
@@ -1417,7 +1395,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="intro-to-filters-logical-indexing">
-<h2><span class="section-number">4.25. </span>Intro to Filters (Logical indexing)<a class="headerlink" href="#intro-to-filters-logical-indexing" title="Permalink to this headline">¶</a></h2>
+<h2>Intro to Filters (Logical indexing)<a class="headerlink" href="#intro-to-filters-logical-indexing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Filters are the selection of rows based on criteria.</p></li>
 <li><p>We can select based on specific criteria.</p></li>
@@ -1476,7 +1454,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="joining-dataframes">
-<h2><span class="section-number">4.26. </span>Joining Dataframes<a class="headerlink" href="#joining-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Joining Dataframes<a class="headerlink" href="#joining-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Often you need to combine dataframe,</p></li>
 <li><p>either matching columns for the smae rows (column  bind)</p></li>
@@ -1484,7 +1462,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </ul>
 </div>
 <div class="section" id="stacking-dataframes-vertically">
-<h2><span class="section-number">4.27. </span>Stacking Dataframes Vertically<a class="headerlink" href="#stacking-dataframes-vertically" title="Permalink to this headline">¶</a></h2>
+<h2>Stacking Dataframes Vertically<a class="headerlink" href="#stacking-dataframes-vertically" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Adds rows vertially with the <code class="docutils literal notranslate"><span class="pre">concat</span></code> function</p></li>
 <li><p>The index is not automatically reset</p></li>
@@ -1517,7 +1495,7 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 </div>
 </div>
 <div class="section" id="inner-outer-joins-dataframes">
-<h2><span class="section-number">4.28. </span>Inner/Outer Joins Dataframes<a class="headerlink" href="#inner-outer-joins-dataframes" title="Permalink to this headline">¶</a></h2>
+<h2>Inner/Outer Joins Dataframes<a class="headerlink" href="#inner-outer-joins-dataframes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Adds rows vertially with the <code class="docutils literal notranslate"><span class="pre">concat</span></code> function</p></li>
 <li><p>In R referred to as a column bind.</p></li>
@@ -1561,9 +1539,9 @@ iris.csv            100%[===================&gt;]   3.63K  --.-KB/s    in 0s
 This work is licensed under the <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license agreement.</p>
 </div>
 <div class="section" id="credits">
-<h2><span class="section-number">4.29. </span>CREDITS<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<h2>CREDITS<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="large-sections-of-this-were-adopted-from-analysing-structured-data-with-pandas-by-steve-phelps-thanks-steve">
-<h3><span class="section-number">4.29.1. </span>Large sections of this were adopted from Analysing structured data with Pandas by <a class="reference external" href="http://sphelps.net">Steve Phelps</a>.  Thanks Steve!<a class="headerlink" href="#large-sections-of-this-were-adopted-from-analysing-structured-data-with-pandas-by-steve-phelps-thanks-steve" title="Permalink to this headline">¶</a></h3>
+<h3>Large sections of this were adopted from Analysing structured data with Pandas by <a class="reference external" href="http://sphelps.net">Steve Phelps</a>.  Thanks Steve!<a class="headerlink" href="#large-sections-of-this-were-adopted-from-analysing-structured-data-with-pandas-by-steve-phelps-thanks-steve" title="Permalink to this headline">¶</a></h3>
 <p>This work is licensed under the <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license agreement.</p>
 </div>
 </div>
@@ -1582,7 +1560,7 @@ This work is licensed under the <a class="reference external" href="https://crea
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./notebooks/01-intro-python"
+            path: "./notebooks"
         },
         predefinedOutput: true
     }
@@ -1598,24 +1576,6 @@ This work is licensed under the <a class="reference external" href="https://crea
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="03-numpy.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title"><span class="section-number">3. </span>Overview of Numpy</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../02-intro-python/01-conditionals-loops.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title"><span class="section-number">5. </span>Conditional Statements and Loops</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
 
 </div>
         
@@ -1637,7 +1597,7 @@ This work is licensed under the <a class="reference external" href="https://crea
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
   
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
