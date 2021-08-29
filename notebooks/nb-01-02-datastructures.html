@@ -5,43 +5,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction Datastructures (Varibles, Lists, Dictionaries, and Sets) &#8212; MGMT 4190/6560 Introduction to Machine Learning Applications @Rensselaer</title>
+    <title>2. Introduction Datastructures (Varibles, Lists, Dictionaries, and Sets) &#8212; MGMT 4190/6560 Introduction to Machine Learning Applications @Rensselaer</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -50,9 +50,10 @@
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="1. Overview of Python Features" href="nb-01-01-python-overview.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -69,22 +70,22 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+    <a class="navbar-brand text-wrap" href="../index.html">
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">MGMT 4190/6560 Introduction to Machine Learning Applications @Rensselaer</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
+  <a class="reference internal" href="../intro.html">
    Welcome to Introduction to Machine Learning Applications
   </a>
  </li>
@@ -96,27 +97,27 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="content/schedule.html">
+  <a class="reference internal" href="../content/schedule.html">
    Schedule
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="content/syllabus.html">
+  <a class="reference internal" href="../content/syllabus.html">
    Syllabus
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="content/preparation.html">
+  <a class="reference internal" href="../content/preparation.html">
    Before Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="content/in_class.html">
+  <a class="reference internal" href="../content/in_class.html">
    In Class
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="content/capstone.html">
+  <a class="reference internal" href="../content/capstone.html">
    <strong>
     The MS Business Analytics Capstone Course
    </strong>
@@ -130,148 +131,148 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session1.html">
-   1. Course Overview &amp; Introduction to the Data Science Lifecycle (08/31)
+  <a class="reference internal" href="../sessions/session1.html">
+   1. Course Overview &amp; Introduction to the Data Science Lifecycle (08/30)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session2.html">
-   2. Python Basics (09/03)
+  <a class="reference internal" href="../sessions/session10.html">
+   2. Overview of Classification (10/01)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session3.html">
-   3. Python Basics  (First in Person Class, Tuesday follow Monday Schedule) (09/08)
+  <a class="reference internal" href="../sessions/session11.html">
+   3. Python and Regression (10/05)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session4.html">
-   4. Python conditionals, loops, functions, aggregating.  (09/10)
+  <a class="reference internal" href="../sessions/session12.html">
+   4. Python and Regression (10/08)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session5.html">
-   5. Python conditionals, loops, functions, aggregating (continued)  (09/14)
+  <a class="reference internal" href="../sessions/session13.html">
+   5. Unsupervised Models (10/15)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session6.html">
-   6. Python visualization, data manipulation , and feature creation. (09/17)
+  <a class="reference internal" href="../sessions/session14.html">
+   6. Midterm Exam (10/19)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session7.html">
-   7. Python visualization, data manipulation , and feature creation (continued) (09/21)
+  <a class="reference internal" href="../sessions/session15.html">
+   7. Time Series Analysis  (10/22)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session8.html">
-   8. Overview of Modeling (09/24)
+  <a class="reference internal" href="../sessions/session16.html">
+   8. Time Series Analysis (10/26)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session9.html">
-   9. Overview of Modeling (09/28)
+  <a class="reference internal" href="../sessions/session17.html">
+   9. Text and NLP (10/29)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session10.html">
-   10. Overview of Classification (10/01)
+  <a class="reference internal" href="../sessions/session18.html">
+   10. Text and NLP (11/02)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session11.html">
-   11. Python and Regression (10/05)
+  <a class="reference internal" href="../sessions/session19.html">
+   11. Introduction to Deep Learning (11/05)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session12.html">
-   12. Python and Regression (10/08)
+  <a class="reference internal" href="../sessions/session2.html">
+   12. Python Basics (09/02)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session13.html">
-   13. Unsupervised Models (10/15)
+  <a class="reference internal" href="../sessions/session20.html">
+   13. Introduction to Deep Learning (11/09)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session14.html">
-   14. Midterm Exam (10/19)
+  <a class="reference internal" href="../sessions/session21.html">
+   14. Introduction to Deep Learning (11/12)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session15.html">
-   15. Time Series Analysis  (10/22)
+  <a class="reference internal" href="../sessions/session22.html">
+   15. Image Data and Deep Learning (11/16)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session16.html">
-   16. Time Series Analysis (10/26)
+  <a class="reference internal" href="../sessions/session23.html">
+   16. NLP and Deep Learning (11/19)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session17.html">
-   17. Text and NLP (10/29)
+  <a class="reference internal" href="../sessions/session24.html">
+   17. R and Machine Learning (11/23)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session18.html">
-   18. Text and NLP (11/02)
+  <a class="reference internal" href="../sessions/session25.html">
+   18. Big Data (11/30)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session19.html">
-   19. Introduction to Deep Learning (11/05)
+  <a class="reference internal" href="../sessions/session26.html">
+   19. Open project questions.  (12/03)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session20.html">
-   20. Introduction to Deep Learning (11/09)
+  <a class="reference internal" href="../sessions/session27.html">
+   20. Final Presentations (12/07)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session21.html">
-   21. Introduction to Deep Learning (11/12)
+  <a class="reference internal" href="../sessions/session28.html">
+   21. Final Presentations  (12/10)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session22.html">
-   22. Image Data and Deep Learning (11/16)
+  <a class="reference internal" href="../sessions/session29.html">
+   22. Final Exam (12/15)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session23.html">
-   23. NLP and Deep Learning (11/19)
+  <a class="reference internal" href="../sessions/session3.html">
+   23. Python Basics  (First in Person Class, Tuesday follow Monday Schedule) (09/08)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session24.html">
-   24. R and Machine Learning (11/23)
+  <a class="reference internal" href="../sessions/session4.html">
+   24. Python conditionals, loops, functions, aggregating.  (09/10)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session25.html">
-   25. Big Data (11/30)
+  <a class="reference internal" href="../sessions/session5.html">
+   25. Python conditionals, loops, functions, aggregating (continued)  (09/14)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session26.html">
-   26. Open project questions.  (12/03)
+  <a class="reference internal" href="../sessions/session6.html">
+   26. Python visualization, data manipulation , and feature creation. (09/17)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session27.html">
-   27. Final Presentations (12/07)
+  <a class="reference internal" href="../sessions/session7.html">
+   27. Python visualization, data manipulation , and feature creation (continued) (09/21)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session28.html">
-   28. Final Presentations  (12/10)
+  <a class="reference internal" href="../sessions/session8.html">
+   28. Overview of Modeling (09/24)
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="sessions/session29.html">
-   29. Final Exam (12/15)
+  <a class="reference internal" href="../sessions/session9.html">
+   29. Overview of Modeling (09/28)
   </a>
  </li>
 </ul>
@@ -280,226 +281,21 @@
   NOTEBOOKS
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/02-intro-python/01-conditionals-loops.html">
-   1. Conditional Statements and Loops
+  <a class="reference internal" href="nb-01-01-python-overview.html">
+   1. Overview of Python Features
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/02-intro-python/02-functions.html">
-   2. Functions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/02-intro-python/03-null-values.html">
-   3. Null Values
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/02-intro-python/04-groupby.html">
-   4. Groupby and Pivot Tables
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/02-intro-python/04-pivottable.html">
-   5. More Pivottables
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/02-intro-python/05-kaggle-baseline.html">
-   6. Kaggle Baseline
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/03-viz-api-scraper/01-intro-api-twitter.html">
-   7. Introduction to APIs
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/03-viz-api-scraper/02-intro-python-webmining.html">
-   8. Web Mining
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/03-viz-api-scraper/03-visualization-python-seaborn.html">
-   9. Introduction to Seaborn
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/03-viz-api-scraper/04-strings-regular-expressions.html">
-   10. String Manipulation and Regular Expressions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/03-viz-api-scraper/05-features-dummies.html">
-   11. Feature Extraction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/03-viz-api-scraper/06-matplotlib.html">
-   13. MatplotLab
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/04-intro-modeling/01-neural-networks.html">
-   14. Neural Networks and the Simplist XOR Problem
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/04-intro-modeling/02-train-test-split.html">
-   15. Train Test Splits
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/04-intro-modeling/03-intro-logistic-knn.html">
-   16. Classification with Scikit-learn
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/04-intro-modeling/04-knn.html">
-   17. KNN
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/05-regression/01-matrix-regression-gradient-decent-python.html">
-   18. Linear Regression
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/05-regression/02-regression-boston-housing-python.html">
-   19. Boston Housing
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/05-regression/03-ridge-lasso-python.html">
-   20. Lasso Ridge Regression
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/05-regression/04-stats-models.html">
-   21. Regression with Stats-Models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/06-unsupervised/01-introduction-pca.html">
-   22. Introduction to Principal Component Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/06-unsupervised/02-pca2.html">
-   23. In Depth: Principal Component Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/06-unsupervised/03-kmeans.html">
-   24. k-Means Clustering
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/06-unsupervised/04-covid19.html">
-   25. Coronavirus Data Modeling
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/07-intro-timeseries/01-time-series.html">
-   26. Time Series Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/07-intro-timeseries/02-forcasting-rossman.html">
-   27. Panel Data vs Time Series Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/08-intro-nlp/01-titanic-features.html">
-   29. Basic Text Feature Creation in Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/08-intro-nlp/02-corpus-simple.html">
-   30. Introduction to Text Mining in Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/08-intro-nlp/03-scikit-learn-text.html">
-   31. Bag-of-Words Using Scikit Learn
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/08-intro-nlp/04-what-cooking-python.html">
-   32. What’s Cooking in Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/08-intro-nlp/05-bag-popcorn-bag-words.html">
-   33. Bag of Words
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/08-intro-nlp/07-fastai-imdb.html">
-   34. IMDB
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/00-neural-networks.html">
-   35. Neural Networks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/00-evaluation.html">
-   36. Evaluation of Classifiers
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/01-tensorflow.html">
-   37. Tensorflow Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/03-pytorch-iris.html">
-   40. Revisiting IRIS with PyTorch
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/04-pytorch-explainer.html">
-   41. PyTorch Deep Explainer MNIST example
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/05-pytorch-mnist.html">
-   42. PyTorch Deep Explainer MNIST example
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/06-regression-bh-pytorch.html">
-   43. Revisting Boston Housing with Pytorch
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/07-titanic-fastai.html">
-   44. Titanic Fastai
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/09-deep-learning1/08-ludwig.html">
-   45. Ludwig
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/10-big-data/01-intro-mapreduce.html">
-   46. Introduction to Map Reduce
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks/10-big-data/02-intro-spark.html">
-   47. Introduction to Spark
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   2. Introduction Datastructures (Varibles, Lists, Dictionaries, and Sets)
   </a>
  </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
-  Deep Learning
+  DEEP LEARNING
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -569,7 +365,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/01-02-datastructures.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notebooks/nb-01-02-datastructures.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -589,7 +385,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/rpi-techfundamentals/spring2021_website/issues/new?title=Issue%20on%20page%20%2F01-02-datastructures.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/rpi-techfundamentals/spring2021_website/issues/new?title=Issue%20on%20page%20%2Fnotebooks/nb-01-02-datastructures.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -610,17 +406,17 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/rpi-techfundamentals/spring2021_website/master?urlpath=tree/site/01-02-datastructures.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/rpi-techfundamentals/spring2021_website/master?urlpath=tree/site/notebooks/nb-01-02-datastructures.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
-                    src="_static/images/logo_binder.svg"
+                    src="../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/rpi-techfundamentals/spring2021_website/blob/master/site/01-02-datastructures.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+        <a class="colab-button" href="https://colab.research.google.com/github/rpi-techfundamentals/spring2021_website/blob/master/site/notebooks/nb-01-02-datastructures.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
                 title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="_static/images/logo_colab.png"
+                    src="../_static/images/logo_colab.png"
                     alt="Interact on Colab">Colab</button></a>
         
         
@@ -639,22 +435,22 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#variables">
-   Variables
+   2.1. Variables
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#variable-type-continued">
-   Variable Type (continued)
+   2.2. Variable Type (continued)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   Variable Type (continued)
+   2.3. Variable Type (continued)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-type-function">
-   The
+   2.4. The
    <code class="docutils literal notranslate">
     <span class="pre">
      type
@@ -665,107 +461,107 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#converting-values-between-types">
-   Converting Values Between Types
+   2.5. Converting Values Between Types
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#converting-values-between-types-continued">
-   Converting Values Between Types (Continued)
+   2.6. Converting Values Between Types (Continued)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#null-values">
-   Null Values
+   2.7. Null Values
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#operations-on-numeric-variables">
-   Operations on Numeric Variables
+   2.8. Operations on Numeric Variables
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#operations-on-string-variables">
-   Operations on String Variables
+   2.9. Operations on String Variables
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#calling-functions-on-variables">
-   Calling Functions on Variables
+   2.10. Calling Functions on Variables
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-operations-on-variables">
-   Exercise - Operations on Variables
+   2.11. Exercise - Operations on Variables
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#lists">
-   Lists
+   2.12. Lists
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Lists
+   2.13. Lists
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   Lists
+   2.14. Lists
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#list">
-   List
+   2.15. List
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-lists">
-   Exercise-Lists
+   2.16. Exercise-Lists
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sets">
-   Sets
+   2.17. Sets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sets-are-mutable">
-   Sets are Mutable
+   2.18. Sets are Mutable
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sets-are-unordered">
-   Sets are Unordered
+   2.19. Sets are Unordered
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#operations-on-sets">
-   Operations on Sets
+   2.20. Operations on Sets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   Operations on Sets
+   2.21. Operations on Sets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   Operations on Sets
+   2.22. Operations on Sets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#dictionaries">
-   Dictionaries
+   2.23. Dictionaries
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#exercise-sets-dictionary">
-   Exercise-Sets/Dictionary
+   2.24. Exercise-Sets/Dictionary
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#credits">
-   CREDITS
+   2.25. CREDITS
   </a>
  </li>
 </ul>
@@ -783,7 +579,7 @@
 <center><h1>Introduction to Python - Datastructures</h1></center>
 <center><h3><a href = 'http://introml.analyticsdojo.com'>rpi.analyticsdojo.com</a></h3></center>
 <div class="section" id="introduction-datastructures-varibles-lists-dictionaries-and-sets">
-<h1>Introduction Datastructures (Varibles, Lists, Dictionaries, and Sets)<a class="headerlink" href="#introduction-datastructures-varibles-lists-dictionaries-and-sets" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Introduction Datastructures (Varibles, Lists, Dictionaries, and Sets)<a class="headerlink" href="#introduction-datastructures-varibles-lists-dictionaries-and-sets" title="Permalink to this headline">¶</a></h1>
 <p>Common to R and Python</p>
 <ul class="simple">
 <li><p>Variables</p></li>
@@ -796,7 +592,7 @@
 <li><p>Sets</p></li>
 </ul>
 <div class="section" id="variables">
-<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Single value</p></li>
 <li><p>Strings, Integer, Floats and boolean are the most common types of variables.</p></li>
@@ -833,7 +629,7 @@
 </div>
 </div>
 <div class="section" id="variable-type-continued">
-<h2>Variable Type (continued)<a class="headerlink" href="#variable-type-continued" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Variable Type (continued)<a class="headerlink" href="#variable-type-continued" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>In Python when we write <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">=</span> <span class="pre">30</span></code> this means the value of <code class="docutils literal notranslate"><span class="pre">30</span></code> is assigned to the <code class="docutils literal notranslate"><span class="pre">b</span></code> object.</p></li>
 <li><p>Python is a <a class="reference external" href="https://pythonconquerstheuniverse.wordpress.com/2009/10/03/static-vs-dynamic-typing-of-programming-languages/">dynamically typed</a>.</p></li>
@@ -863,7 +659,7 @@ Now the value of a is  hello there and of type  &lt;class &#39;str&#39;&gt;
 </div>
 </div>
 <div class="section" id="id1">
-<h2>Variable Type (continued)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>Variable Type (continued)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><em>Variables</em> themselves do not have a fixed type.</p></li>
 <li><p>It is only the values that they refer to that have an associated <em>type</em>.</p></li>
@@ -887,7 +683,7 @@ Now the value of a is  hello there and of type  &lt;class &#39;str&#39;&gt;
 </div>
 </div>
 <div class="section" id="the-type-function">
-<h2>The <code class="docutils literal notranslate"><span class="pre">type</span></code> Function<a class="headerlink" href="#the-type-function" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.4. </span>The <code class="docutils literal notranslate"><span class="pre">type</span></code> Function<a class="headerlink" href="#the-type-function" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can query the type of a value using the <code class="docutils literal notranslate"><span class="pre">type</span></code> function.</p></li>
 <li><p>Variables can be reassigned to a different type.</p></li>
@@ -948,7 +744,7 @@ Now the value of a is  hello there and of type  &lt;class &#39;str&#39;&gt;
 </div>
 </div>
 <div class="section" id="converting-values-between-types">
-<h2>Converting Values Between Types<a class="headerlink" href="#converting-values-between-types" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.5. </span>Converting Values Between Types<a class="headerlink" href="#converting-values-between-types" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can convert values between different types.</p></li>
 <li><p>To convert to string use the <code class="docutils literal notranslate"><span class="pre">str()</span></code> function.</p></li>
@@ -983,7 +779,7 @@ Now the value of a is  hello there and of type  &lt;class &#39;str&#39;&gt;
 </div>
 </div>
 <div class="section" id="converting-values-between-types-continued">
-<h2>Converting Values Between Types (Continued)<a class="headerlink" href="#converting-values-between-types-continued" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.6. </span>Converting Values Between Types (Continued)<a class="headerlink" href="#converting-values-between-types-continued" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>To convert to a boolean use the <code class="docutils literal notranslate"><span class="pre">bool()</span></code> function.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> can work with a String type that is <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
@@ -1018,7 +814,7 @@ False &lt;class &#39;bool&#39;&gt;
 </div>
 </div>
 <div class="section" id="null-values">
-<h2>Null Values<a class="headerlink" href="#null-values" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.7. </span>Null Values<a class="headerlink" href="#null-values" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Sometimes we represent “no data” or “not applicable”.</p></li>
 <li><p>In Python we use the special value <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
@@ -1049,7 +845,7 @@ False &lt;class &#39;bool&#39;&gt;
 </div>
 </div>
 <div class="section" id="operations-on-numeric-variables">
-<h2>Operations on Numeric Variables<a class="headerlink" href="#operations-on-numeric-variables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.8. </span>Operations on Numeric Variables<a class="headerlink" href="#operations-on-numeric-variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Python can be used as a basic calculator.</p></li>
 <li><p>Check out this associated <a class="reference external" href="https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator">tutorial</a>.</p></li>
@@ -1080,7 +876,7 @@ Exponents: 25
 </div>
 </div>
 <div class="section" id="operations-on-string-variables">
-<h2>Operations on String Variables<a class="headerlink" href="#operations-on-string-variables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.9. </span>Operations on String Variables<a class="headerlink" href="#operations-on-string-variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Just as we can do numeric operations, we can also do operations on strings.</p></li>
 <li><p>Concatentate Strings</p></li>
@@ -1138,7 +934,7 @@ This is the second line, but we have included a line continuation character:
 </div>
 </div>
 <div class="section" id="calling-functions-on-variables">
-<h2>Calling Functions on Variables<a class="headerlink" href="#calling-functions-on-variables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.10. </span>Calling Functions on Variables<a class="headerlink" href="#calling-functions-on-variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can call functions in a conventional way using round brackets</p></li>
 <li><p>Python has a wide variety of <a class="reference external" href="https://docs.python.org/3/library/functions.html">built in functions</a>,</p></li>
@@ -1157,7 +953,7 @@ This is the second line, but we have included a line continuation character:
 </div>
 </div>
 <div class="section" id="exercise-operations-on-variables">
-<h2>Exercise - Operations on Variables<a class="headerlink" href="#exercise-operations-on-variables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.11. </span>Exercise - Operations on Variables<a class="headerlink" href="#exercise-operations-on-variables" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>What happens when you multiply a number times a boolean? What is the resulting type?</p></li>
 <li><p>What happens when you try to multiply an integer value times a null?</p></li>
@@ -1165,7 +961,7 @@ This is the second line, but we have included a line continuation character:
 </ol>
 </div>
 <div class="section" id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.12. </span>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Lists can be used to contain a sequence of values of any type.</p></li>
 <li><p>You can do operations on lists.</p></li>
@@ -1204,7 +1000,7 @@ Print up till the 2nd to last value: [1, 2, &#39;three&#39;]
 </div>
 </div>
 <div class="section" id="id2">
-<h2>Lists<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.13. </span>Lists<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Lists can be nested, where there are lists of lists.</p></li>
 <li><p>The elements of a nested list is specified after the first list when slicing <code class="docutils literal notranslate"><span class="pre">c[0][0]</span></code></p></li>
@@ -1231,7 +1027,7 @@ This is the first element of the second list: 6
 </div>
 </div>
 <div class="section" id="id3">
-<h2>Lists<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.14. </span>Lists<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Lists can added to with the <code class="docutils literal notranslate"><span class="pre">append</span></code> method or your can directly assign location in list.</p></li>
 <li><p>You can identify the length of a list with <code class="docutils literal notranslate"><span class="pre">len(a)</span></code></p></li>
@@ -1261,7 +1057,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="list">
-<h2>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.15. </span>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>If you set a lista = listb this list will not be a copy but instead be the same list, where if you modify one it will modify both.</p></li>
 <li><p>To create a copy of a list, you can use <code class="docutils literal notranslate"><span class="pre">lista=listb[:]</span></code> or <code class="docutils literal notranslate"><span class="pre">lista=listb.copy()</span></code></p></li>
@@ -1298,7 +1094,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="exercise-lists">
-<h2>Exercise-Lists<a class="headerlink" href="#exercise-lists" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.16. </span>Exercise-Lists<a class="headerlink" href="#exercise-lists" title="Permalink to this headline">¶</a></h2>
 <p>Hint: <a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html">This list of functions on lists is useful.</a></p>
 <ol class="simple">
 <li><p>Create a list <code class="docutils literal notranslate"><span class="pre">elists1</span></code> with the following values (1,2,3,4,5).</p></li>
@@ -1308,7 +1104,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </ol>
 </div>
 <div class="section" id="sets">
-<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.17. </span>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Lists can contain duplicate values.</p></li>
 <li><p>A set, in contrast, contains no duplicates.</p></li>
@@ -1345,7 +1141,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="sets-are-mutable">
-<h2>Sets are Mutable<a class="headerlink" href="#sets-are-mutable" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.18. </span>Sets are Mutable<a class="headerlink" href="#sets-are-mutable" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Sets are mutable like lists (meaning we can change them)</p></li>
 <li><p>Duplicates are automatically removed</p></li>
@@ -1370,7 +1166,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="sets-are-unordered">
-<h2>Sets are Unordered<a class="headerlink" href="#sets-are-unordered" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.19. </span>Sets are Unordered<a class="headerlink" href="#sets-are-unordered" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Sets do not have an order.</p></li>
 <li><p>Therefore we cannot index or slice them.</p></li>
@@ -1394,7 +1190,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="operations-on-sets">
-<h2>Operations on Sets<a class="headerlink" href="#operations-on-sets" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.20. </span>Operations on Sets<a class="headerlink" href="#operations-on-sets" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Union: <span class="math notranslate nohighlight">\(X \cup Y\)</span> combines two sets</p></li>
 </ul>
@@ -1414,7 +1210,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="id4">
-<h2>Operations on Sets<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.21. </span>Operations on Sets<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Intersection: <span class="math notranslate nohighlight">\(X \cap Y\)</span>:</p></li>
 </ul>
@@ -1434,7 +1230,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="id5">
-<h2>Operations on Sets<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.22. </span>Operations on Sets<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Difference <span class="math notranslate nohighlight">\(X - Y\)</span>:</p></li>
 </ul>
@@ -1454,7 +1250,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="dictionaries">
-<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.23. </span>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>You can think of dictionaries as arrays that help you assocaite a <code class="docutils literal notranslate"><span class="pre">key</span></code> with a <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p></li>
 <li><p>Dictionaries can be specified with <code class="docutils literal notranslate"><span class="pre">{key:</span> <span class="pre">value,</span> <span class="pre">key:</span> <span class="pre">value}</span></code></p></li>
@@ -1499,7 +1295,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </div>
 </div>
 <div class="section" id="exercise-sets-dictionary">
-<h2>Exercise-Sets/Dictionary<a class="headerlink" href="#exercise-sets-dictionary" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.24. </span>Exercise-Sets/Dictionary<a class="headerlink" href="#exercise-sets-dictionary" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Create a set <code class="docutils literal notranslate"><span class="pre">eset1</span></code> with the following values (1,2,3,4,5).</p></li>
 <li><p>Create a new set <code class="docutils literal notranslate"><span class="pre">eset2</span></code> the following values (1,3,6).</p></li>
@@ -1511,7 +1307,7 @@ We added 11 to b: [6, &#39;seven&#39;, 8, &#39;nine&#39;, 10, &#39;Eleven&#39;, 
 </ol>
 </div>
 <div class="section" id="credits">
-<h2>CREDITS<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.25. </span>CREDITS<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
 <p>Copyright <a class="reference external" href="http://rpi.analyticsdojo.com">AnalyticsDojo</a> 2020
 This work is licensed under the <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license agreement.</p>
 <p>This work has been adopted from the <a class="reference external" href="https://github.com/phelps-sg/python-bigdata">origional version</a>:
@@ -1532,7 +1328,7 @@ Copyright <a class="reference external" href="http://sphelps.net">Steve Phelps</
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./notebooks"
         },
         predefinedOutput: true
     }
@@ -1548,6 +1344,15 @@ Copyright <a class="reference external" href="http://sphelps.net">Steve Phelps</
 
 <div class='prev-next-bottom'>
     
+    <div id="prev">
+        <a class="left-prev" href="nb-01-01-python-overview.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title"><span class="section-number">1. </span>Overview of Python Features</p>
+            </div>
+        </a>
+    </div>
 
 </div>
         
@@ -1569,7 +1374,7 @@ Copyright <a class="reference external" href="http://sphelps.net">Steve Phelps</
       </div>
     </div>
   
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
   
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
