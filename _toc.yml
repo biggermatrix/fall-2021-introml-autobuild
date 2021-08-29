@@ -1,8 +1,6 @@
-format: jb-article
+format: jb-book
 root: intro
-sections:
+chapters:
+- file: notebooks
+- file: markdown
 - file: content
-  sections:
-  - file: markdown
-  - file: notebooks
-- file: syntax
