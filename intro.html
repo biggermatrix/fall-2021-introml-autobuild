@@ -182,61 +182,7 @@
 <h1>GitHub Actions with Jupyter Book<a class="headerlink" href="#github-actions-with-jupyter-book" title="Permalink to this headline">¶</a></h1>
 <p>This is a small sample book built with GitHub Actions. It was built using the
 following action:</p>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">deploy-book</span>
-
-<span class="c1"># Only run this when the master branch changes</span>
-<span class="nt">on</span><span class="p">:</span>
-  <span class="nt">push</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
-
-<span class="c1"># This job installs dependencies, build the book, and pushes it to `gh-pages`</span>
-<span class="nt">jobs</span><span class="p">:</span>
-  <span class="nt">deploy-book</span><span class="p">:</span>
-    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-    <span class="nt">steps</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
-
-    <span class="c1"># Install dependencies</span>
-    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Set up Python 3.7</span>
-      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/setup-python@v1</span>
-      <span class="nt">with</span><span class="p">:</span>
-        <span class="nt">python-version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3.7</span>
-
-    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install dependencies</span>
-      <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">pip install -r requirements.txt</span>
-
-
-    <span class="c1"># Build the book</span>
-    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Build the book</span>
-      <span class="nt">run</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">jupyter-book build .</span>
-
-    <span class="c1"># Push the book&#39;s HTML to github-pages</span>
-    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GitHub Pages action</span>
-      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">peaceiris/actions-gh-pages@v3.5.9</span>
-      <span class="nt">with</span><span class="p">:</span>
-        <span class="nt">github_token</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
-        <span class="nt">publish_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">./_build/html</span>
-</pre></div>
-</div>
 <p>and this <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span>
-<span class="n">pandas</span>
-<span class="n">matplotlib</span>
-<span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
-<span class="n">tabulate</span>
-<span class="n">numpy</span>
-<span class="n">pyyaml</span>
-<span class="n">docutils</span>
-<span class="n">click</span>
-<span class="n">pydata</span><span class="o">-</span><span class="n">sphinx</span><span class="o">-</span><span class="n">theme</span>
-<span class="n">beautifulsoup4</span>
-<span class="n">importlib</span><span class="o">-</span><span class="n">resources</span>
-<span class="n">sphinx</span><span class="o">-</span><span class="n">book</span><span class="o">-</span><span class="n">theme</span>
-</pre></div>
-</div>
 <div class="toctree-wrapper compound">
 </div>
 </div>
